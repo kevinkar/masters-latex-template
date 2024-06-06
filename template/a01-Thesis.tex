@@ -1,0 +1,127 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Master's Thesis LaTeX Template
+%%
+%% Use at your own discretion.
+%%
+%% Version 1.0.0
+%%
+%% 2024-06-01
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Get the LaTex going. No need to edit.
+%% Layout and styling is defined in the preamble.
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Set document class
+\documentclass[english, a4paper, 12pt]{article}
+
+%% Import the preamble with LaTex things
+\input{meta/a00-Preamble.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Change the values indicated by CHANGE below.
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Metadata for PDF/A
+%% CHANGE: Title
+%% CHANGE: Author
+%% CHANGE: Keywords %% Note: Make sure these are the same as in the Abstract.
+\begin{filecontents*}{\jobname.xmpdata}
+	\Title{The Main Title of Your Thesis}
+	\Author{Nomen Nominandum}
+	\Keywords{LaTex Template\sep ÅA\sep FNT/IT\sep 2024}
+	\Publisher{Åbo Akademi}
+	\Language{en-UK}
+\end{filecontents*}
+
+%% Title page
+%% CHANGE: title
+%% CHANGE: author
+\title{The Main Title of Your Thesis}
+\author{Nomen Nominandum}
+\date{\today}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Defines the structure of the document.
+%% Edit as needed for Appendices etc.
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%
+%% DOCUMENT START
+%%
+\begin{document}
+
+%% Different page numbering for beginning
+\pagenumbering{roman}
+
+%%
+%% Title page
+%%
+\include{contents/b00-Title.tex}
+\setcounter{page}{1}
+
+%%
+%% Abstract
+%%
+\include{contents/b01-Abstract.tex}
+
+%%
+%% Svenskt referat
+%%
+\include{contents/b02-Referat.tex}
+
+%%
+%% Preface / Foreword / Acknowledgment
+%%
+\include{contents/b03-Preface.tex}
+
+%%
+%% TOC
+%%
+\tableofcontents
+\newpage
+
+%%
+%% Glossary
+%%
+\printglossary
+\newpage
+
+%% Reset page numbering and set numerical style for actual content
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+%%
+%% Chapters
+%%
+\include{contents/c01-Introduction.tex}
+\include{contents/c02-Background.tex}
+\include{contents/c03-Theory.tex}
+\include{contents/c04-Implementation.tex}
+\include{contents/c05-Results.tex}
+\include{contents/c06-Conclusion.tex}
+\include{contents/d01-Sammanfattning.tex}
+
+%%
+%% References (Bibliography)
+%%
+\printbibliography
+
+%%
+%% NOT USED Appendices
+%% FIXME: Title too big
+%%
+%\appendixpage
+
+\end{document}
+
+%% END %%

@@ -1,0 +1,125 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Preamble defines layout and styling and packages to use
+%% 
+%% Advanced users may edit as needed.
+%%
+%% Version 1.0.0
+%%
+%% 2024-06-01
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Change font as preferred
+%% Review the line spacing
+%% Review margins
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Document basics
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%
+%% Use Polyglossia and set the language to English.
+%% This has to be set before the fonts.
+%%
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Global Layout and Styling
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%
+%% Fonts
+%% Make it look like your own document.
+%%
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+
+%% 
+%% Line spacing 1.5
+%% TODO: Review line spacing
+%%
+\renewcommand{\baselinestretch}{1.5}\normalsize
+%\renewcommand{\baselinestretch}{1.0\normalsize
+
+%%
+%% Margins
+%%
+\usepackage[left=4.5cm, right=2.0cm, top=2.5cm, bottom=3.0cm]{geometry} % From di_direkt.pdf
+%\usepackage[left=4.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry} % Alternative
+
+%%
+%% Header and footer with fancyhdr
+%%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % Clear command
+%% Remove default header line
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\fancyfoot{}
+%% Page number in footer to the right
+\fancyfoot[R]{\thepage}
+
+%%
+%% Paragraph indentation
+%%
+\setlength\parindent{0.4cm} % From di_direkt.pdf
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Content packages
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%
+%% Title Page
+%%
+\usepackage{titling}
+
+%%
+%% Glossary
+%%
+\usepackage[automake]{glossaries-extra}
+\input{contents/b04-Glossary.tex}
+\makeglossaries
+
+%%
+%% References / Bibliography
+%%
+%% Use Biblatex for Bibliography, IEEE style
+%%
+\usepackage[
+	backend=biber,
+	style=ieee,
+	eprint=false,
+	isbn=false,
+	maxnames=2,
+	minnames=1
+]{biblatex}
+\addbibresource{contents/d02-Bibliography.bib}
+
+%%
+%% NOT USED Appendices
+%%
+%\usepackage[toc,page]{appendix} % Adds Appendices with title Appendices and adds it to the ToC
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Other packages.
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[hidelinks]{hyperref}
+
+%% END %%
