@@ -299,3 +299,25 @@ TSWLatexianTemp*
 # option is specified. Footnotes are the stored in a file with suffix Notes.bib.
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
+
+####################
+##
+## EDITED
+## Custom changes below
+##
+####################
+
+## glossaries-extra
+*.ist
+
+## xmpdata
+*.xmpdata
+
+## 
+## Ignore PDF
+## CHANGE if you use the repo for thesis versioning
+##
+## The PDF output is expected to be a01-Thesis.pdf
+##
+*.pdf
+#!a01-Thesis.pdf ## Uncomment to include thesis pdf
