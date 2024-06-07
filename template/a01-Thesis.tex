@@ -25,28 +25,35 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
-%% Change the values indicated by CHANGE below.
+%% Change the values below to your own.
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Metadata for PDF/A
-%% CHANGE: Title
-%% CHANGE: Author
-%% CHANGE: Keywords %% Note: Make sure these are the same as in the Abstract.
-\begin{filecontents*}{\jobname.xmpdata}
-	\Title{The Main Title of Your Thesis}
-	\Author{Nomen Nominandum}
-	\Keywords{LaTex Template\sep ÅA\sep FNT/IT\sep 2024}
-	\Publisher{Åbo Akademi}
-	\Language{en-UK}
-\end{filecontents*}
+\def\title{The Main Title of Your Thesis}
+\def\subtitle{Optional Subtitle} %% Uncomment in title page to have it included
+\def\author{Nomen Nominandum}
+\def\keywords{LaTex Template, ÅA, FNT/IT, 2024}
+\def\nyckelord{LaTex Template, ÅA, FNT/IT, 2024}
+\def\publisher{Åbo Akademi}
+\def\supervisor{Nomen Nescio}
 
-%% Title page
-%% CHANGE: title
-%% CHANGE: author
-\title{The Main Title of Your Thesis}
-\author{Nomen Nominandum}
-\date{\today}
+\def\thesis{Master's Thesis in Computer Engineering}
+\def\supervisor{Supervisor: Nomen Nescio}
+\def\university{Åbo Akademi University}
+\def\faculty{Faculty of Science and Engineering}
+\def\department{Information Technologies}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Metadata for PDF
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hypersetup{
+	pdftitle={\title},
+	pdfauthor={\author},
+	pdfkeywords={\keywords}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
