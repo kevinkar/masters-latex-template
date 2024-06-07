@@ -14,7 +14,7 @@
 
 Primarily suited for theses in English for major programs in Swedish at Åbo Akademi FNT. Based on di_direktiv.pdf and updated according to later guidelines.
 
-This is not an officially endorsed template, user discretion is advised. The template takes inspiration from similar works, and incorporates parts of these works. Thanks to these authors.
+This is not an officially endorsed template, user discretion is advised. The template takes inspiration from similar works. Thanks to these authors listed in `Credits`.
 
 Remember - this is a template I have created for my own needs. You might have different requirements for structure and formatting. There is not a one template to rule them all.
 
@@ -92,24 +92,29 @@ Known issues and limitations with the template, including further work to do.
 * No appendices part
 * Need for figures listing?
 * Abbreviations instead of Glossary?
+* Swedish Summary section heading too long depending on font
+
+### Compilation warnings
+
+```
+a01-Thesis.toc: warning: 4: Font shape `TU/bch/m/n' undefined(Font) using `TU/lmr/m/n' instead
+a01-Thesis.gls: warning: 1: Token not allowed in a PDF string (Unicode):removing `\textenglish'
+a01-Thesis.tex: warning: : Some font shapes were not available, defaults substituted.
+```
 
 ## License
 
-TODO License
-
-Currently a private project that is not publically available.
+This project is released under The Unlicense, but consider giving credit where credit is due.
 
 ## Credits
 
-TODO Credits
-
-Currently a private project that is not publically available.
-
-* JB _di_direktiv.pdf_
+This template is inspired by the following works.
 
 * LS _di_template_
   - `https://github.com/lsundman/di_template`
   - No License
+
+* JB _di_direktiv.pdf_
 
 * TT _Åbo Akademi - Bachelor/Masters Thesis_
   - `https://www.overleaf.com/latex/templates/abo-akademi-bachelor-slash-masters-thesis/`
