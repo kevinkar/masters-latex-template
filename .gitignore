@@ -300,12 +300,12 @@ TSWLatexianTemp*
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
 
-####################
+########################################
 ##
 ## EDITED
 ## Custom changes below
 ##
-####################
+########################################
 
 ## glossaries-extra
 *.ist
@@ -321,3 +321,10 @@ TSWLatexianTemp*
 ##
 *.pdf
 #!a01-Thesis.pdf ## Uncomment to include thesis pdf
+
+## 
+## Ignore images
+## CHANGE if you use the repo for thesis versioning
+##
+*.png
+!template/figures/example/example-image.png

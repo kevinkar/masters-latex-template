@@ -88,9 +88,9 @@ This directory contains only a MARKER file - a placeholder. You can use this dir
 
 Known issues and limitations with the template, including further work to do.
 
-* No figures
+* Chapters figure reference needs path to figures directory
+* List of Figures not in TOC
 * No appendices part
-* Need for figures listing?
 * Abbreviations instead of Glossary?
 * Swedish Summary section heading too long depending on font
 
