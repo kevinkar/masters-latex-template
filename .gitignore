@@ -320,7 +320,9 @@ TSWLatexianTemp*
 ## The PDF output is expected to be a01-Thesis.pdf
 ##
 *.pdf
-#!a01-Thesis.pdf ## Uncomment to include thesis pdf
+## Uncomment to include thesis pdf
+#!a01-Thesis.pdf
+!template/pdfout/sample/a01-Thesis.pdf
 
 ## 
 ## Ignore images
