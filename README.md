@@ -6,7 +6,7 @@
 ##
 ## Version 1.0.0
 ##
-## 2024-06-01
+## 2024-06-12
 ##
 --->
 
@@ -14,7 +14,7 @@
 
 Primarily suited for theses in English for major programs in Swedish at Åbo Akademi FNT. Based on di_direktiv.pdf and updated according to later guidelines.
 
-This is not an officially endorsed template, user discretion is advised. The template takes inspiration from similar works. Thanks to these authors listed in `Credits`.
+This is not an officially endorsed template, user discretion is advised. The template takes inspiration from similar works, thanks to the authors listed under `Credits`.
 
 Remember - this is a template I have created for my own needs. You might have different requirements for structure and formatting. There is not a one template to rule them all.
 
@@ -82,7 +82,7 @@ d02-Bibliography.bib
 
 `./template/figures/.MARKER`
 
-This directory contains only a MARKER file - a placeholder. You can use this directory to store figures that are part of the document.
+This directory contains a MARKER file - a placeholder. You can use this directory to store figures that are part of the document.
 
 ## Known Issues
 
@@ -108,7 +108,7 @@ This project is released under The Unlicense, but consider giving credit where c
 
 ## Credits
 
-This template is inspired by the following works.
+This template is a unique artefact that has been inspired by, but not copied directly from the following works:
 
 * LS _di_template_
   - `https://github.com/lsundman/di_template`
@@ -125,9 +125,13 @@ This template is inspired by the following works.
 
 ## Git Versioning
 
-You can use Git for versioning your thesis work in a repository. Before that, familiarize yourself with git and especially the `.gitignore` file, so that no work is lost. 
+You can use Git for versioning your thesis work in a repository. Before that, familiarize yourself with git and especially the `.gitignore` file, so that no work is lost. For example
+- image formats
+- compilation output
+- other files
 
 TODO More on using the repo.
+
 
 ---
 
