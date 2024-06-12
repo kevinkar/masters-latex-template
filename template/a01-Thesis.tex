@@ -1,0 +1,149 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Master's Thesis LaTeX Template
+%%
+%% Use at your own discretion.
+%%
+%% Version 1.0.0
+%%
+%% 2024-06-12
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Get the LaTex going. No need to edit.
+%% Layout and styling is defined in the preamble.
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Set document class
+\documentclass[english, a4paper, 12pt]{article}
+
+%% Import the preamble with LaTex things
+\input{meta/a00-Preamble.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Change the values below to your own.
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\title{The Main Title of Your Thesis}
+%\def\subtitle{Optional Subtitle} %% Edit and uncomment this line if you have a subtitle
+\def\author{Nomen Nominandum}
+\def\keywords{LaTex Template, ÅA, FNT/IT, 2024}
+\def\nyckelord{LaTex Template, ÅA, FNT/IT, 2024}
+\def\publisher{Åbo Akademi}
+\def\supervisor{Nomen Nescio}
+
+\def\thesis{Master's Thesis in Computer Engineering}
+\def\supervisor{Supervisor: Nomen Nescio}
+\def\university{Åbo Akademi University}
+\def\faculty{Faculty of Science and Engineering}
+\def\department{Information Technologies}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Metadata for PDF
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hypersetup{
+	pdftitle={\title},
+	pdfauthor={\author},
+	pdfkeywords={\keywords}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Defines the structure of the document.
+%% Edit as needed for Appendices etc.
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%
+%% DOCUMENT START
+%%
+\begin{document}
+
+%% Different page numbering for beginning
+\pagenumbering{roman}
+
+%%
+%% Title page
+%%
+\include{contents/b00-Title.tex}
+\setcounter{page}{1}
+
+%%
+%% Abstract
+%%
+\include{contents/b01-Abstract.tex}
+
+%%
+%% Svenskt referat
+%%
+%% Remove the iffalse-fi commands to make the chapter visible.
+%%
+\iffalse
+\begin{swedish}
+\include{contents/b02-Referat.tex}
+\end{swedish}
+\fi
+
+%%
+%% Preface / Foreword / Acknowledgment
+%%
+\include{contents/b03-Preface.tex}
+
+%%
+%% TOC
+%%
+\tableofcontents
+\newpage
+
+%%
+%% Glossary
+%%
+\printglossary
+\newpage
+
+%%
+%% List of Figures
+%% 
+\listoffigures
+\newpage
+
+
+%% Reset page numbering and set numerical style for actual content
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+%%
+%% Chapters
+%%
+\include{contents/c01-Introduction.tex}
+\include{contents/c02-Background.tex}
+\include{contents/c03-Theory.tex}
+\include{contents/c04-Implementation.tex}
+\include{contents/c05-Results.tex}
+\include{contents/c06-Conclusion.tex}
+\begin{swedish}
+\include{contents/d01-Sammanfattning.tex}
+\end{swedish}
+
+%%
+%% References (Bibliography)
+%%
+\printbibliography[title={References}] %% Change title if necessary, References is default for bibtex
+
+%%
+%% NOT USED Appendices
+%% FIXME: Title too big
+%%
+%\appendixpage
+
+\end{document}
+
+%% END %%
