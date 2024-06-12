@@ -322,11 +322,11 @@ TSWLatexianTemp*
 *.pdf
 ## Uncomment to include thesis pdf
 #!a01-Thesis.pdf
-!template/pdfout/sample/a01-Thesis.pdf
+!*/pdfout/sample/a01-Thesis.pdf
 
 ## 
 ## Ignore images
 ## CHANGE if you use the repo for thesis versioning
 ##
 *.png
-!template/figures/example/example-image.png
+!*/figures/example/example-image.png
